@@ -2,8 +2,9 @@ import Layout from '../../components/layout';
 import Axios from 'axios';
 import { getAllContent, getAllIds } from '../../lib/posts';
 import Head from 'next/head';
+import { AppProps } from 'next/app';
 
-export default function Post({ postData }) {
+export default function Post({ postData }: AppProps) {
   return (
     <Layout>
         <Head>
